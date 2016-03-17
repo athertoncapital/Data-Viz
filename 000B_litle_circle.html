@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  A template
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> <title>My project</title>
+    <script type="text/javascript" src="../d3.v3.js"></script>
+    <link href="style.css" rel="stylesheet"> </head>
+  <body>
+
+    <script>
+      var dataset = [20, 5, 10, 0, 50];
+      d3.select('body')
+      .selectAll('p') // selection
+      .data(dataset) //databinding
+      .enter() // create enter selection .append('p') // dom manipulation .style('font-size', '50px') // static property .text(function (d, i) { // dynamic property
+      return i + ': my value is ' + d; });
+
+    </script>
+  </body>
+</html>
+

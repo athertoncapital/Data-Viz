@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  A template
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> <title>My project</title>
+    <script type="text/javascript" src="../d3.v3.js"></script>
+    <link href="style.css" rel="stylesheet"> </head>
+  <body>
+
+    <script>
+      var circle = svg.selectAll("circle")
+      .data([32, 57, 293], String);
+
+      circle.enter().append("svg:circle")
+      .attr("cy", 90)
+      .attr("cx", String)
+      .attr("r", Math.sqrt);
+
+      circle.exit().remove();
+
+
+    </script>
+  </body>
+</html>
+
